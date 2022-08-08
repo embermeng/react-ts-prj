@@ -1,6 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import {useDispatch} from "react-redux";
+
 
 export default function Channel() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch({type: ''})
+    }, [])
     return (
         <ul className='catagtory'>
             <li className='select'>开发者资讯</li>
